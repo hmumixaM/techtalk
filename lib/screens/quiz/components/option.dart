@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:quiz_app/controllers/question_controller.dart';
 
 class Option extends StatefulWidget {
-  Option({this.text, this.index, this.qnController});
+  Option({this.text, this.index});
   final String text;
   final int index;
-  final QuestionController qnController;
 
   @override
   State<StatefulWidget> createState() {
+    QuestionController qnController = Get.put(QuestionController());;
     return _Option(text: text, index: index, qnController: qnController);
   }
 }

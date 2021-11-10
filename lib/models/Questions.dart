@@ -32,7 +32,7 @@ const List data = [
     "id": 4,
     "question": "What command do you use to output data to the screen?",
     "options": ['print', 'console.log', 'cout', 'all of above'],
-    "answer_index": 2,
+    "answer_index": 3,
   },
   {
     "id": 5,

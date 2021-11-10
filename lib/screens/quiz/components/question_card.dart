@@ -13,7 +13,6 @@ class QuestionCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    QuestionController _controller = Get.put(QuestionController());
     return Container(
       key: UniqueKey(),
       margin: EdgeInsets.symmetric(horizontal: 20),
@@ -28,7 +27,6 @@ class QuestionCard extends StatelessWidget {
             (index) => Option(
               index: index,
               text: question.options[index],
-              qnController: _controller,
             ),
           ),
         ],
